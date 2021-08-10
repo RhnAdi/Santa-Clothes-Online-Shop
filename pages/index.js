@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Navbar from "../components/Navbar";
 import CardShop from "../components/CardShop";
 import CaurselBanner from "../components/CaurselBanner";
@@ -5,6 +6,10 @@ import Footer from "../components/Footer";
 
 export default function Home(){
   return (
+    <>
+    <Head>
+      <title>Santa Clothes | Home</title>
+    </Head>
     <div>
       <Navbar />
       <div id='content' className='container mx-auto pt-28 md:pt-24 px-12'>
@@ -64,5 +69,6 @@ export default function Home(){
       </div>
       <Footer />
     </div>
+    </>
   )
 }

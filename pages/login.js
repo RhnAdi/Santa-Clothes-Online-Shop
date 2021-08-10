@@ -1,4 +1,5 @@
 import Router from 'next/router'
+import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from "react"
 
@@ -33,6 +34,10 @@ export default function signup () {
    }
 
    return (
+      <>
+      <Head>
+         <title>Santa Clothes | Login</title>
+      </Head>
       <div id='signupPage' className='flex h-screen justify-center'>
          <div className='flex flex-col justify-center p-5 w-96'>
             <p className="text-2xl font-bold text-gray-700 border-b-4 border-gray-700 w-36 py-3">Login</p>
@@ -51,5 +56,6 @@ export default function signup () {
             <p className='text-sm text-gray-500 text-center font-bold mt-3'>Or create your account ? <Link href='/signup'><a className='text-blue-400'>Sign Up here</a></Link></p>
          </div>
       </div>
+      </>
    )
 }

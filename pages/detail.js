@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import ImagesDetail from '../components/ImagesDetail'
 import ProductDescription from '../components/ProductDescription'
@@ -36,6 +37,10 @@ export default function Detail () {
    }
 
    return (
+      <>
+      <Head>
+         <title>Detail | Kaos Distro Pria</title>
+      </Head>
       <div className='font-poppins'>
          <Navbar />
          <div id='content' className='container mx-auto pt-28 md:pt-24 px-12'>
@@ -102,5 +107,6 @@ export default function Detail () {
          </div>
          <Footer />
       </div>
+      </>
    )
 }
