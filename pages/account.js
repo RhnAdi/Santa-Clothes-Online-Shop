@@ -85,7 +85,7 @@ export default function Account ({data, error}) {
                (
                   <div className="shadow-2xl container px-5 py-16 mx-auto w-96 md:w-4/5">
                      <div className="w-64 h-44 mb-8 mx-auto">
-                        <Image src='/image/error.jpg' layout="responsive" width={600} height={400} />
+                        <Image src='/image/error.jpg' layout="responsive" width={600} height={400} alt='error-picture' />
                      </div>
                      <p className="text-center font-bold text-2xl text-gray-700">Oppsss...!!! Please login.</p>
                      <div className='flex flex-col justify-center w-full mt-8'>

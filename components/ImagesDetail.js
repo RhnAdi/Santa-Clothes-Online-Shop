@@ -24,30 +24,30 @@ export default function ImagesDetail() {
       <div className='bg-gray-700 p-5 rounded-md'>
          <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2 mb-5">
             <SwiperSlide className='flex justify-center'>
-               <Image src='/image/tshirt (1).jpg' width={300} height={320} className='rounded-md' />
+               <Image src='/image/tshirt (1).jpg' width={300} height={320} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide className='flex justify-center'>
-               <Image src='/image/tshirt (2).jpg' width={300} height={320} className='rounded-md' />
+               <Image src='/image/tshirt (2).jpg' width={300} height={320} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide className='flex justify-center'>
-               <Image src='/image/tshirt (3).jpg' width={300} height={320} className='rounded-md' />
+               <Image src='/image/tshirt (3).jpg' width={300} height={320} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide className='flex justify-center'>
-               <Image src='/image/tshirt (4).jpg' width={300} height={320} className='rounded-md' />
+               <Image src='/image/tshirt (4).jpg' width={300} height={320} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
          </Swiper>
          <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesVisibility={true} watchSlidesProgress={true} className="mySwiper">
             <SwiperSlide>
-               <Image src='/image/tshirt (1).jpg' width={200} height={220} className='rounded-md' />
+               <Image src='/image/tshirt (1).jpg' width={200} height={220} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide>
-               <Image src='/image/tshirt (2).jpg' width={200} height={220} className='rounded-md' />
+               <Image src='/image/tshirt (2).jpg' width={200} height={220} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide>
-               <Image src='/image/tshirt (3).jpg' width={200} height={220} className='rounded-md' />
+               <Image src='/image/tshirt (3).jpg' width={200} height={220} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
             <SwiperSlide>
-               <Image src='/image/tshirt (4).jpg' width={200} height={220} className='rounded-md' />
+               <Image src='/image/tshirt (4).jpg' width={200} height={220} className='rounded-md' alt='image-detail' />
             </SwiperSlide>
          </Swiper>
       </div>

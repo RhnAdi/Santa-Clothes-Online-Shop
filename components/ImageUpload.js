@@ -18,6 +18,7 @@ export default function ImageUpload () {
             src={imageFile || userAccount}
             className='rounded-full object-cover object-center'
             layout='fill' 
+            alt='profile-picture'
          />
          <div className="absolute right-0 bottom-0">
             <div className="flex justify-center">

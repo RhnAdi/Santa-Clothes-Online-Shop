@@ -3,7 +3,7 @@ import Head from 'next/Head'
 import Link from 'next/link'
 import { useState } from "react"
 
-export default function signup () {
+export default function Signup () {
    // Initial State
    const [username, setUsername] = useState('')
    const [email, setEmail] = useState('')

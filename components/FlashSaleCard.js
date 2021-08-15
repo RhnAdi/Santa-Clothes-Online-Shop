@@ -5,7 +5,7 @@ export default function FlashSaleCard ({productName, productPrice, productImage,
    return(
      <div className='shadow-lg w-48 bg-white p-5 rounded-lg font-poppins border-2 border-gray-200 hover:shadow-2xl'>
        <div className='mb-2 rounded-md relative'>
-         <Image src={`/image/${productImage}`} width={200} height={220} className='rounded-md' />
+         <Image src={`/image/${productImage}`} width={200} height={220} className='rounded-md' alt='image-product' />
          <div className='absolute py-2 px-1 rounded-full bg-gray-700 text-white text-sm left-0 top-0'>{productDiscount}</div>
        </div>
        <p className='font-bold text-sm text-gray-800'>{productName}</p>
