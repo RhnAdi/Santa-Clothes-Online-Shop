@@ -1,4 +1,5 @@
+const withPreact = require('next-plugin-preact')
+
 module.exports = {
   reactStrictMode: true,
-  webpack5 : true
 }
