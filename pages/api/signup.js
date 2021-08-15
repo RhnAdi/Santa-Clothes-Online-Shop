@@ -10,6 +10,10 @@ const signup = nextConnect()
    const { username, email, password } = req.body
    const passwordhash = bcrypt.hashSync(password, 10)
    const checkEmail = await User.findOne({email})
+   const checkUsername = await User.findOne({username})
+   if(checkUsername){
+      return res.json({message : "Username sudah ada."})
+   }
    if(checkEmail){
       return res.json({message : "Email sudah ada."})
    }

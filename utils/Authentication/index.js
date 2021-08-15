@@ -1,7 +1,9 @@
 import { verify } from "jsonwebtoken"
+import Cookies from 'cookies'
 
 const Authentication = (fn) => async (req, res) => {
-   verify(req.headers.auth, process.env.SECRET, async (error, decoded) => {
+   const cookie = new Cookies(req, res)
+   await verify(cookie.get('auth'), process.env.SECRET, async (error, decoded) => {
       if(!error && decoded){
          return await fn(req, res)
       }

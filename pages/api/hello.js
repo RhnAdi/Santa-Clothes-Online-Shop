@@ -1,7 +1,11 @@
-import User from '../../models/Users'
+import nextConnect from "next-connect";
+import Cookies from "cookies"
 
-export default async function Hello (req, res) {
-   await User.find({email : 'rphtl@gmail.com'})
-   .then(result => res.status(400).json({data:result}))
-   .catch(err => res.status(400).json({error : err}))
-}
+const hello = nextConnect()
+.get((req, res) => {
+   const cookie = new Cookies (req, res)
+   const jwt = cookie.get('auth')
+   res.json({jwt})
+})
+
+export default hello

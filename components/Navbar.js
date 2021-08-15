@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Router from 'next/router'
 import { Popover, Menu } from'@headlessui/react'
 import { BsFillHouseDoorFill, BsFillGridFill, BsFillTagFill, BsPeopleCircle, BsFillCaretDownFill } from 'react-icons/bs'
 import { FaShoppingCart, FaTshirt } from 'react-icons/fa'
 import { GiLargeDress } from 'react-icons/gi'
 
 export default function Navbar () {
+   const toAccount = () => {
+      return Router.push('/account')
+   }
    return (
       <Popover className='fixed w-full z-50'>
       <div id='navbar' className='bg-gray-700' >
@@ -47,7 +51,7 @@ export default function Navbar () {
                   <Link href='/'><a className='flex justify-center items-center mx-2 py-1 px-2 hover:bg-gray-600 rounded-md' >
                      <FaShoppingCart size={24} />
                   </a></Link>
-                  <div className='flex justify-center rounded-full ml-2'>
+                  <div className='flex justify-center rounded-full ml-2 cursor-pointer' onClick={toAccount}>
                      <Image src='/icons/user-account.svg' width={30} height={30} className='rounded-full' />
                   </div>
                </div>
@@ -126,7 +130,7 @@ export default function Navbar () {
                   <div className='mr-2 text-gray-700 group-hover:text-white'>
                      <BsPeopleCircle />
                   </div>
-                  <Link href='/'><a className=''>Account</a></Link>
+                  <Link href='/account'><a className=''>Account</a></Link>
                </div>
                
             </div>

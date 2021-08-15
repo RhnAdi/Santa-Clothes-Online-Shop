@@ -14,12 +14,12 @@ const login = nextConnect()
          console.log(status)
          if(status){
             const claims = {sub : result._id}
-            const jwt = sign(claims, process.env.SECRET, {expiresIn : '1h'})
+            const jwt = sign(claims, process.env.SECRET, {expiresIn : '1d'})
             res.setHeader('Set-Cookie', cookie.serialize('auth', jwt, {
                httpOnly : true,
                secure : process.env.NODE_ENV !== 'development',
                sameSite : 'strict',
-               maxAge : 3600,
+               maxAge : 86400,
                path : '/'
             }))
             res.status(200).json({status : 200, message : 'Selamat, datang !!!'})
