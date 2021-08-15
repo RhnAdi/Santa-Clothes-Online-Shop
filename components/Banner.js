@@ -9,7 +9,7 @@ export default function Banner () {
             <button className='bg-gray-700 text-white px-8 py-2 rounded-md font-bold mt-4 focus:ring-4 focus:ring-gray-300'>Belanja sekarang</button>
          </div>
          <div className='flex justify-center md:w-1/2'>
-            <Image src='/image/banner-image.svg' width={300} height={300} />
+            <Image src='/image/banner-image.svg' width={300} height={300} alt='image-banner' />
          </div>
       </div>
    )

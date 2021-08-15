@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from "../components/Footer"
 import { useState } from 'react'
 import Router from 'next/router'
-import Head from 'next/head'
+import Head from 'next/Head'
 import ImageUpload from '../components/ImageUpload'
 
 export default function Account ({data, error}) {

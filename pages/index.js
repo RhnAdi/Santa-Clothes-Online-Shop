@@ -1,9 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/Head'
 import Navbar from "../components/Navbar";
 import CardShop from "../components/CardShop";
 import CaurselBanner from "../components/CaurselBanner";
 import Footer from "../components/Footer";
-import FlashSaleCard from '../components/FlashSaleCard';
 import Banner from '../components/Banner';
 import FlashSale from '../components/FlashSale';
 

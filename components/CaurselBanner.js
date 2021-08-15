@@ -36,17 +36,17 @@ export default function CaurselBanner () {
       }} className="">
          <SwiperSlide>
             <div className='bg-white rounded-md flex justify-center'>
-               <Image src='/image/banner-1.jpg' width={400} height={250} className='rounded-md shadow-md' />
+               <Image src='/image/banner-1.jpg' width={400} height={250} className='rounded-md shadow-md' alt='banner-caursel' />
             </div>
          </SwiperSlide>
          <SwiperSlide>
             <div className='bg-white rounded-md flex justify-center'>
-               <Image src='/image/banner-2.jpg' width={400} height={250} className='rounded-md shadow-md' />
+               <Image src='/image/banner-2.jpg' width={400} height={250} className='rounded-md shadow-md' alt='banner-caursel' />
             </div>
          </SwiperSlide>
          <SwiperSlide>
             <div className='bg-white rounded-md flex justify-center'>
-               <Image src='/image/banner-3.jpg' width={400} height={250} className='rounded-md shadow-md' />
+               <Image src='/image/banner-3.jpg' width={400} height={250} className='rounded-md shadow-md' alt='banner-caursel'/>
             </div>
          </SwiperSlide>
       </Swiper>
