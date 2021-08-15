@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Head from 'next/Head'
+import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import ImagesDetail from '../components/ImagesDetail'
 import ProductDescription from '../components/ProductDescription'
